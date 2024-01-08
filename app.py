@@ -219,7 +219,7 @@ with gr.Blocks() as demo:
                     2.4. Click "Delete last step" to delete the lastest clicked control point.<br>
                 3. Animate the image according the path with a click on "Run" button. <br>""")
     
-    DragNUWA_net = Drag("cuda:0", 'models/drag_nuwa_svd.pth', 'DragNUWA_net.py', 320, 576, 14)
+    DragNUWA_net = Drag("cuda:0", 'drag_nuwa.pth', 'DragNUWA_net.py', 320, 576, 14)
     first_frame_path = gr.State()
     tracking_points = gr.State([])
 
